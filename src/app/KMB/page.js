@@ -33,7 +33,7 @@ function App() {
     }, []);
   return(
     <div className="">
-    <div className="flex justify-center gap-6">
+    <div className="flex justify-center gap-6 text-2xl text-black">
     <Link className="hover:underline hover:text-red-600" href="/">首頁</Link>
       <Link className="mb-4 hover:underline hover:text-red-600" href="./MTR">MTR</Link>
     </div>
