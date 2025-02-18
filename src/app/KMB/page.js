@@ -32,7 +32,7 @@ function App() {
       return () => clearInterval(intervalId); 
     }, []);
   return(
-    <div className="text-black">
+    <div className="">
     <div className="flex justify-center gap-6">
     <Link className="hover:underline hover:text-red-600" href="/">首頁</Link>
       <Link className="mb-4 hover:underline hover:text-red-600" href="./MTR">MTR</Link>
@@ -40,11 +40,11 @@ function App() {
     <div className="flex justify-center">
     <img className="w-1/4" src="https://cdn.coupert.com/ccsimg/dcs/img_tools/dcs_img_6b623e19ba5f026e5a5da48c3191f7a5.webp"/>
     </div>
-    <div className='text-center flex gap-2 justify-center mt-10 w-full'>
+    <div className='text-center flex gap-2 justify-center mt-10 w-full text-black'>
       <div className="flex bg-gray-200 border-2 border-black">
 
-      <h1 className='text-xl'>當前時間:</h1>
-      <p className='text-xl'>{currentTime ? currentTime.toLocaleTimeString() : '加載中...'}</p>
+      <div className='text-xl'>當前時間:</div>
+      <div className='text-xl'>{currentTime ? currentTime.toLocaleTimeString() : '加載中...'}</div>
     </div>
       </div>
     <SearchBar Search={Search} setSearch={setSearch}/>

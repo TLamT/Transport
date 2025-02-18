@@ -32,10 +32,10 @@ import { fetchBusStopData } from "../fetchFunction";
 
   return (
     <div className="flex flex-col gap-4 mt-4 text-2xl items-center">
-  <div className="font-bold text-3xl text-gray-800 ">
+  <div className="font-bold text-3xl">
     {`${choosedRoute.route} - ${choosedRoute.orig_tc} → ${choosedRoute.dest_tc}`}
   </div>
-  <div className="w-full bg-gray-100 rounded-lg shadow-md p-4">
+  <div className="w-full bg-white rounded-lg shadow-md p-4">
     {busStopData.map((item, index) => {
       return (
         <div className="border-b border-gray-300 py-3 last:border-0" key={index}>

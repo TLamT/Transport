@@ -43,7 +43,7 @@ export const ChoosingRoute = ({ Search, setChosenRoute, allLineData }) => {
             key={index}
             className={`cursor-pointer p-4 rounded-lg transition-colors duration-300 
               transform hover:scale-105 
-              ${isSelected ? 'bg-blue-500 text-white' : 'bg-gray-200 hover:bg-gray-300'} 
+              ${isSelected ? 'bg-blue-500 text-white' : 'bg-white-200 hover:bg-gray-300'} 
               text-xl shadow-md`}
             onClick={() => { handleOnClick(item, index); }}
           >

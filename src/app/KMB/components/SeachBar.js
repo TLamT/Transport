@@ -4,7 +4,7 @@ export const SearchBar = ({ Search, setSearch }) => {
       // 使用正則表達式檢查輸入內容是否只包含數字和英文字母
       const regex = /^[a-zA-Z0-9]*$/;
       if ((regex.test(value) || value === '') && value.length<= 5) { // 允許空字符串
-        setSearch(value);
+        setSearch(value.toUpperCase());
       }
     };
   
