@@ -72,7 +72,7 @@ const App = () => {
 
   return (
     <div>
-      <div className="flex justify-center gap-2 text-xl space-x-20">
+      <div className="flex justify-center gap-2 text-xl space-x-20 text-blue-600">
         <Link className="hover:underline hover:text-red-600" href="/">首頁</Link>
         <Link className="mb-4 hover:underline hover:text-red-600" href="./KMB">KMB</Link>
       </div>
