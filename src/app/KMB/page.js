@@ -32,7 +32,7 @@ function App() {
       return () => clearInterval(intervalId); 
     }, []);
   return(
-    <>
+    <div className="text-black">
     <div className="flex justify-center gap-6">
     <Link className="hover:underline hover:text-red-600" href="/">首頁</Link>
       <Link className="mb-4 hover:underline hover:text-red-600" href="./MTR">MTR</Link>
@@ -58,7 +58,7 @@ function App() {
       ↑
     </button>
 
-    </>
+    </div>
     
   )
 }

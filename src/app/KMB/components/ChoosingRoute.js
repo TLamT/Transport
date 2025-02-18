@@ -27,7 +27,7 @@ export const ChoosingRoute = ({ Search, setChosenRoute, allLineData }) => {
   return (
     <div className="flex justify-center gap-2 mt-10 flex-col">
   {searchRoute.length === 0 ? (
-    <div className="text-lg text-gray-500">請輸入正確車站</div>
+    <div className="text-lg text-red-500 text-center">請輸入正確車站</div>
   ) : (
     <>
       <div
