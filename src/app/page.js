@@ -1,9 +1,19 @@
+"use client";
 import Link from "next/link";
 import moment from "moment";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const now = moment().format('YYYY-MM-DD HH:mm:ss');
-console.log('當前時間:', now);
+  const [now, setNow] = useState(moment().format('YYYY-MM-DD HH:mm:ss'));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNow(moment().format('YYYY-MM-DD HH:mm:ss'));
+    }, 1000); // 每秒更新一次
+
+    return () => clearInterval(interval); // 清理定時器
+  }, []);
+
   const hour = moment().hour();
   let backgroundColor;
   if (hour >= 6 && hour < 12) {
