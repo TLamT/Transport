@@ -1,5 +1,5 @@
 
-## Transports App
+## Transports App ("Used Hong Kong Gov Open Data API to fetch real-time transport information.")
 
 This project is a simple yet effective web application that leverages APIs to fetch data and utilizes React for component-based development. This architecture enhances the application's maintainability and scalability, allowing it to quickly display real-time public transport information.
 
